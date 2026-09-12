@@ -1,0 +1,44 @@
+{
+	"name": "obsidian-forest",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Git worktree copies of the active Obsidian note",
+	"license": "0BSD",
+	"type": "module",
+	"main": "main.js",
+	"imports": {
+		"#src/*": "./src/*.ts"
+	},
+	"scripts": {
+		"build": "pnpm run typecheck && node esbuild.config.mjs production",
+		"check": "pnpm run lint && pnpm run format:check && pnpm run typecheck && pnpm run test && node esbuild.config.mjs production",
+		"dev": "node esbuild.config.mjs",
+		"format": "oxfmt --write .",
+		"format:check": "oxfmt --check .",
+		"lint": "oxlint --type-aware .",
+		"test": "vitest run",
+		"typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.vitest.json --noEmit",
+		"version": "node version-bump.mjs && git add manifest.json versions.json"
+	},
+	"dependencies": {
+		"effect": "4.0.0-rc.113",
+		"effect-obsidian": "file:../effect-obsidian"
+	},
+	"devDependencies": {
+		"@effect/language-service": "0.87.2",
+		"@effect/vitest": "4.0.0-rc.113",
+		"@oxlint/plugins": "1.82.0",
+		"@types/node": "24.9.2",
+		"esbuild": "0.28.2",
+		"obsidian": "1.13.1",
+		"oxfmt": "0.67.0",
+		"oxlint": "1.82.0",
+		"oxlint-tsgolint": "7.0.2001",
+		"typescript": "7.0.2",
+		"vitest": "5.0.0"
+	},
+	"engines": {
+		"node": ">=24"
+	},
+	"packageManager": "pnpm@11.8.0"
+}
