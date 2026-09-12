@@ -1,4 +1,4 @@
-# Forest 🌳
+# Forest 🌳 an Obsidian worktrees plugin
 
 Git worktree copies of the note you have open in Obsidian.
 
