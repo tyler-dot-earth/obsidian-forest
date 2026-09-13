@@ -10,7 +10,7 @@
 		"#/src/*": "./src/*.ts"
 	},
 	"scripts": {
-		"build": "pnpm run typecheck && node esbuild.config.mjs production",
+		"build": "tsc -p tsconfig.json --noEmit && node esbuild.config.mjs production",
 		"check": "pnpm run lint && pnpm run format:check && pnpm run typecheck && pnpm run test && node esbuild.config.mjs production",
 		"dev": "node esbuild.config.mjs",
 		"format": "oxfmt --write .",

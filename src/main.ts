@@ -109,35 +109,35 @@ export default class ForestPlugin extends Plugin implements ForestPluginSettings
 
 	private addWorktreesCommands(): void {
 		this.addCommand({
-			id: 'forest-show',
+			id: 'show',
 			name: 'Show Forest',
 			callback: (): void => {
 				void this.showForestSidebar()
 			},
 		})
 		this.addCommand({
-			id: 'forest-preview',
+			id: 'preview',
 			name: 'Preview worktree copy',
 			callback: (): void => {
 				this.pickWorktreeCopy('preview')
 			},
 		})
 		this.addCommand({
-			id: 'forest-diff',
+			id: 'diff',
 			name: 'Diff worktree copy',
 			callback: (): void => {
 				this.pickWorktreeCopy('diff')
 			},
 		})
 		this.addCommand({
-			id: 'forest-open',
+			id: 'open',
 			name: 'Open worktree copy in default app',
 			callback: (): void => {
 				this.pickWorktreeCopy('open')
 			},
 		})
 		this.addCommand({
-			id: 'forest-open-folder',
+			id: 'open-folder',
 			name: 'Open worktree folder',
 			callback: (): void => {
 				this.pickWorktreeCopy('folder')
