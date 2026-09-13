@@ -16,10 +16,10 @@
 		"format": "oxfmt --write .",
 		"format:check": "oxfmt --check .",
 		"lint": "oxlint --type-aware .",
-		"release": "bash scripts/release.sh",
+		"release": "effect-obsidian release",
 		"test": "vitest run",
 		"typecheck": "tsc -p tsconfig.json --noEmit && tsc -p tsconfig.vitest.json --noEmit",
-		"version": "node version-bump.mjs && git add manifest.json versions.json"
+		"version": "effect-obsidian bump-manifest && git add manifest.json versions.json"
 	},
 	"dependencies": {
 		"effect": "4.0.0-rc.113",
