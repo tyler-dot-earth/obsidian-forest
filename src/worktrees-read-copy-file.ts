@@ -2,7 +2,7 @@ import { readFile } from 'node:fs/promises'
 
 import { Effect } from 'effect'
 
-import { WorktreesFileReadError, worktreesErrorMessage } from '#src/worktrees-errors'
+import { WorktreesFileReadError, worktreesErrorMessage } from '#/src/worktrees-errors'
 
 /** Reads a worktree file as UTF-8 text. */
 export const readWorktreeCopyFile: (

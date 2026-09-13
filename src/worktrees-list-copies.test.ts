@@ -1,10 +1,10 @@
 import { assert, describe, it } from '@effect/vitest'
 
-import { GitWorktree } from '#src/worktrees-git-worktree-list'
+import { GitWorktree } from '#/src/worktrees-git-worktree-list'
 import {
 	worktreeAbsolutePathForVaultFile,
 	worktreeCopiesForExistingPaths,
-} from '#src/worktrees-list-copies'
+} from '#/src/worktrees-list-copies'
 
 describe('worktreeAbsolutePathForVaultFile', () => {
 	it('joins vault-relative segments onto the worktree root', () => {

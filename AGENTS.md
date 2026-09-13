@@ -7,7 +7,7 @@ Commands list copies for the open file, then preview, diff against the vault fil
 ## Layout
 
 - `src/main.ts` is the Plugin host: onload/onunload, commands, views, status bar
-- Package imports: `#src/...`
+- Package imports: `#/src/...`
 - Effect programs live in named modules, not in the Plugin class
 - `effect-obsidian` is a sibling repo (`../effect-obsidian`), consumed via `file:`
 - Release artifacts at repo root: `main.js`, `manifest.json`, `styles.css`

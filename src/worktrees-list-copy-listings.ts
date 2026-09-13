@@ -1,9 +1,9 @@
 import { Effect } from 'effect'
 
-import { worktreeCopyDiffersFromVault } from '#src/worktrees-copy-differs'
-import { WorktreesGitError } from '#src/worktrees-errors'
-import type { WorktreeFileCopy } from '#src/worktrees-list-copies'
-import { listWorktreeCopiesForVaultFile } from '#src/worktrees-list-copies-for-file'
+import { worktreeCopyDiffersFromVault } from '#/src/worktrees-copy-differs'
+import { WorktreesGitError } from '#/src/worktrees-errors'
+import type { WorktreeFileCopy } from '#/src/worktrees-list-copies'
+import { listWorktreeCopiesForVaultFile } from '#/src/worktrees-list-copies-for-file'
 
 /** A worktree copy plus whether it differs from the vault file. */
 export interface WorktreeCopyListing {

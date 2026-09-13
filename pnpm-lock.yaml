@@ -13,7 +13,7 @@ importers:
         version: 4.0.0-rc.113
       effect-obsidian:
         specifier: file:../effect-obsidian
-        version: file:../effect-obsidian
+        version: file:../effect-obsidian(effect@4.0.0-rc.113)
     devDependencies:
       '@effect/language-service':
         specifier: 0.87.2
@@ -786,6 +786,8 @@ packages:
   effect-obsidian@file:../effect-obsidian:
     resolution: {directory: ../effect-obsidian, type: directory}
     engines: {node: '>=24'}
+    peerDependencies:
+      effect: 4.0.0-rc.113
 
   effect@4.0.0-rc.113:
     resolution: {integrity: sha512-uZ4Bh7KSlw2sdVdNDHPLSNjLGH+MWap7cheIHZoB/1T/ZJ3pvI4KiN3kUp50MpFKXhygOMmReJJOwWMQPwpPAg==}
@@ -1484,7 +1486,7 @@ snapshots:
 
   detect-libc@2.1.2: {}
 
-  effect-obsidian@file:../effect-obsidian:
+  effect-obsidian@file:../effect-obsidian(effect@4.0.0-rc.113):
     dependencies:
       effect: 4.0.0-rc.113
 

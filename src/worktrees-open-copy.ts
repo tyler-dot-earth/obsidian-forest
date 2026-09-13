@@ -2,8 +2,8 @@ import process from 'node:process'
 
 import { Effect, Match } from 'effect'
 
-import { WorktreesGitError } from '#src/worktrees-errors'
-import { worktreesExecFile } from '#src/worktrees-exec-file'
+import { WorktreesGitError } from '#/src/worktrees-errors'
+import { worktreesExecFile } from '#/src/worktrees-exec-file'
 
 /** Opens a worktree file with the OS default app. */
 export const openWorktreeCopyInDefaultApp: (input: {

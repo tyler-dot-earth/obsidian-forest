@@ -3,13 +3,13 @@ import type { PluginDataStore } from 'effect-obsidian'
 import { ItemView, TFile } from 'obsidian'
 import type { WorkspaceLeaf } from 'obsidian'
 
-import type { WorktreeFileCopy } from '#src/worktrees-list-copies'
+import type { WorktreeFileCopy } from '#/src/worktrees-list-copies'
 import {
 	listWorktreeCopyListingsForVaultFile,
 	type WorktreeCopyListing,
-} from '#src/worktrees-list-copy-listings'
-import { type ForestOpenTarget, forestOpenTargetFromString } from '#src/worktrees-plugin-settings'
-import { worktreesVaultAbsoluteFilePath, worktreesVaultBasePath } from '#src/worktrees-vault-path'
+} from '#/src/worktrees-list-copy-listings'
+import { type ForestOpenTarget, forestOpenTargetFromString } from '#/src/worktrees-plugin-settings'
+import { worktreesVaultAbsoluteFilePath, worktreesVaultBasePath } from '#/src/worktrees-vault-path'
 
 /** ItemView type id for the Forest sidebar list. */
 export const FOREST_SIDEBAR_VIEW_TYPE = 'forest'

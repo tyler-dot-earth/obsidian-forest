@@ -3,9 +3,9 @@ import type { PluginDataStore } from 'effect-obsidian'
 import { ItemView, MarkdownRenderer } from 'obsidian'
 import type { ViewStateResult, WorkspaceLeaf } from 'obsidian'
 
-import { WorktreeFileCopy } from '#src/worktrees-list-copies'
-import { readWorktreeCopyFile } from '#src/worktrees-read-copy-file'
-import { worktreesReadableLineLengthEnabled } from '#src/worktrees-readable-line-length'
+import { WorktreeFileCopy } from '#/src/worktrees-list-copies'
+import { readWorktreeCopyFile } from '#/src/worktrees-read-copy-file'
+import { worktreesReadableLineLengthEnabled } from '#/src/worktrees-readable-line-length'
 
 /** ItemView type id for a rendered worktree copy. */
 export const WORKTREES_PREVIEW_VIEW_TYPE = 'forest-preview'

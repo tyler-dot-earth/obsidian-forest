@@ -1,13 +1,13 @@
 import { Effect } from 'effect'
 
-import { WorktreesGitError } from '#src/worktrees-errors'
-import { worktreePathExists } from '#src/worktrees-file-exists'
+import { WorktreesGitError } from '#/src/worktrees-errors'
+import { worktreePathExists } from '#/src/worktrees-file-exists'
 import {
 	type WorktreeFileCopy,
 	worktreeAbsolutePathForVaultFile,
 	worktreeCopiesForExistingPaths,
-} from '#src/worktrees-list-copies'
-import { listGitWorktreesOutsideVault } from '#src/worktrees-list-git-worktrees'
+} from '#/src/worktrees-list-copies'
+import { listGitWorktreesOutsideVault } from '#/src/worktrees-list-git-worktrees'
 
 /** Lists worktree copies of a vault-relative file that exist on disk. */
 export const listWorktreeCopiesForVaultFile: (input: {

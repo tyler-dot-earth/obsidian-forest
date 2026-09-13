@@ -2,7 +2,7 @@ import { join as joinPath } from 'node:path'
 
 import { Array, Result, Schema } from 'effect'
 
-import type { GitWorktree } from '#src/worktrees-git-worktree-list'
+import type { GitWorktree } from '#/src/worktrees-git-worktree-list'
 
 /** A file that exists in a worktree at the same vault-relative path. */
 export const WorktreeFileCopy = Schema.Struct({

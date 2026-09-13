@@ -3,7 +3,7 @@ import { assert, describe, it } from '@effect/vitest'
 import {
 	gitWorktreesOutsideVault,
 	parseGitWorktreeListPorcelain,
-} from '#src/worktrees-git-worktree-list'
+} from '#/src/worktrees-git-worktree-list'
 
 const samplePorcelain = `worktree /tmp/vault
 HEAD abc123

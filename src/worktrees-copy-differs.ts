@@ -1,7 +1,7 @@
 import { Effect } from 'effect'
 
-import { WorktreesGitError } from '#src/worktrees-errors'
-import { worktreesExecFile } from '#src/worktrees-exec-file'
+import { WorktreesGitError } from '#/src/worktrees-errors'
+import { worktreesExecFile } from '#/src/worktrees-exec-file'
 
 /** True when the worktree file is not identical to the vault file. */
 export const worktreeCopyDiffersFromVault: (input: {

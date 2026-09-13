@@ -6,7 +6,7 @@ import {
 	defaultForestPluginSettings,
 	forestOpenTargetFromString,
 	loadForestPluginSettings,
-} from '#src/worktrees-plugin-settings'
+} from '#/src/worktrees-plugin-settings'
 
 describe('ForestPluginSettings', () => {
 	it.effect('defaults to split when plugin data is missing', () =>

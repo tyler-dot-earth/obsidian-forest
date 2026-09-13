@@ -3,9 +3,9 @@ import type { PluginDataStore } from 'effect-obsidian'
 import { ItemView } from 'obsidian'
 import type { ViewStateResult, WorkspaceLeaf } from 'obsidian'
 
-import { diffVaultFileAgainstWorktreeCopy } from '#src/worktrees-diff-copy'
-import { WorktreeFileCopy } from '#src/worktrees-list-copies'
-import { worktreesVaultAbsoluteFilePath, worktreesVaultBasePath } from '#src/worktrees-vault-path'
+import { diffVaultFileAgainstWorktreeCopy } from '#/src/worktrees-diff-copy'
+import { WorktreeFileCopy } from '#/src/worktrees-list-copies'
+import { worktreesVaultAbsoluteFilePath, worktreesVaultBasePath } from '#/src/worktrees-vault-path'
 
 /** ItemView type id for a git diff of a worktree copy. */
 export const WORKTREES_DIFF_VIEW_TYPE = 'forest-diff'

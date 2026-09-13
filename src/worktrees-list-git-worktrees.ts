@@ -1,12 +1,12 @@
 import { Effect } from 'effect'
 
-import { WorktreesGitError } from '#src/worktrees-errors'
-import { worktreesExecFile } from '#src/worktrees-exec-file'
+import { WorktreesGitError } from '#/src/worktrees-errors'
+import { worktreesExecFile } from '#/src/worktrees-exec-file'
 import {
 	type GitWorktree,
 	gitWorktreesOutsideVault,
 	parseGitWorktreeListPorcelain,
-} from '#src/worktrees-git-worktree-list'
+} from '#/src/worktrees-git-worktree-list'
 
 /** Runs `git worktree list --porcelain` in the vault and drops the vault checkout. */
 export const listGitWorktreesOutsideVault: (input: {

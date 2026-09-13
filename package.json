@@ -7,7 +7,7 @@
 	"type": "module",
 	"main": "main.js",
 	"imports": {
-		"#src/*": "./src/*.ts"
+		"#/src/*": "./src/*.ts"
 	},
 	"scripts": {
 		"build": "pnpm run typecheck && node esbuild.config.mjs production",

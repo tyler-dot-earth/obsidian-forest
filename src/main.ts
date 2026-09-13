@@ -8,25 +8,25 @@ import {
 } from 'effect-obsidian'
 import { MarkdownView, Notice, Plugin, TFile } from 'obsidian'
 
-import { WorktreesCopySuggestModal } from '#src/worktrees-copy-suggest-modal'
-import { WORKTREES_DIFF_VIEW_TYPE, WorktreesDiffView } from '#src/worktrees-diff-view'
-import type { WorktreeFileCopy } from '#src/worktrees-list-copies'
-import { listWorktreeCopiesForVaultFile } from '#src/worktrees-list-copies-for-file'
-import { openWorktreeCopyInDefaultApp } from '#src/worktrees-open-copy'
+import { WorktreesCopySuggestModal } from '#/src/worktrees-copy-suggest-modal'
+import { WORKTREES_DIFF_VIEW_TYPE, WorktreesDiffView } from '#/src/worktrees-diff-view'
+import type { WorktreeFileCopy } from '#/src/worktrees-list-copies'
+import { listWorktreeCopiesForVaultFile } from '#/src/worktrees-list-copies-for-file'
+import { openWorktreeCopyInDefaultApp } from '#/src/worktrees-open-copy'
 import {
 	defaultForestPluginSettings,
 	ForestPluginSettings,
 	type ForestPluginSettingsHost,
 	loadForestPluginSettings,
-} from '#src/worktrees-plugin-settings'
-import { WORKTREES_PREVIEW_VIEW_TYPE, WorktreesPreviewView } from '#src/worktrees-preview-view'
-import { ForestSettingTab } from '#src/worktrees-setting-tab'
+} from '#/src/worktrees-plugin-settings'
+import { WORKTREES_PREVIEW_VIEW_TYPE, WorktreesPreviewView } from '#/src/worktrees-preview-view'
+import { ForestSettingTab } from '#/src/worktrees-setting-tab'
 import {
 	FOREST_SIDEBAR_VIEW_TYPE,
 	type ForestSidebarActions,
 	ForestSidebarView,
-} from '#src/worktrees-sidebar-view'
-import { worktreesVaultBasePath } from '#src/worktrees-vault-path'
+} from '#/src/worktrees-sidebar-view'
+import { worktreesVaultBasePath } from '#/src/worktrees-vault-path'
 
 export default class ForestPlugin extends Plugin implements ForestPluginSettingsHost {
 	override settings = defaultForestPluginSettings

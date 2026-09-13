@@ -4,7 +4,7 @@ import {
 	ForestPluginSettings,
 	type ForestPluginSettingsHost,
 	forestOpenTargetFromString,
-} from '#src/worktrees-plugin-settings'
+} from '#/src/worktrees-plugin-settings'
 
 /** Plugin settings tab for how Forest opens preview and diff. */
 export class ForestSettingTab extends PluginSettingTab {

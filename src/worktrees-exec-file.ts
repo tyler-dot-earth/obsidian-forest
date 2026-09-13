@@ -2,7 +2,7 @@ import { execFile as execFileCallback } from 'node:child_process'
 
 import { Effect, Predicate } from 'effect'
 
-import { WorktreesGitError, worktreesErrorMessage } from '#src/worktrees-errors'
+import { WorktreesGitError, worktreesErrorMessage } from '#/src/worktrees-errors'
 
 /** Result of a git (or other) process. Exit code 1 is kept for `git diff --no-index`. */
 export interface WorktreesExecResult {

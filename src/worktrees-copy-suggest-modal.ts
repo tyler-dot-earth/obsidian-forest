@@ -1,7 +1,7 @@
 import { FuzzySuggestModal } from 'obsidian'
 import type { App } from 'obsidian'
 
-import type { WorktreeFileCopy } from '#src/worktrees-list-copies'
+import type { WorktreeFileCopy } from '#/src/worktrees-list-copies'
 
 /** Picks one worktree copy of the active note. */
 export class WorktreesCopySuggestModal extends FuzzySuggestModal<WorktreeFileCopy> {
