@@ -43,4 +43,5 @@ Symlink only `main.js`, `manifest.json`, and `styles.css`. Add `"forest"` to `co
 pnpm check
 pnpm dev
 pnpm build
+pnpm release -- patch
 ```
