@@ -1,4 +1,4 @@
-# Forest
+# Forest 🌳 an Obsidian worktrees plugin
 
 Preview, diff, and open git worktree copies of the note you have open.
 
@@ -19,6 +19,10 @@ If the Lanes plugin is enabled, card Worktree fields and a card right-click menu
 
 License is 0BSD.
 
+## Sample vault
+
+`example/vault` is one note plus two worktrees outside the vault. See `example/README.md`.
+
 ## Install for development
 
 Plugin id is `forest`. Obsidian loads `Vault/.obsidian/plugins/forest/`.
@@ -35,7 +39,7 @@ cd effect-obsidian && pnpm install
 cd ../obsidian-forest && pnpm install && pnpm build
 ```
 
-Symlink only `main.js`, `manifest.json`, and `styles.css`. Add `"forest"` to `community-plugins.json`. Reload Obsidian.
+Symlink only `main.js`, `manifest.json`, and `styles.css`. Add `"forest"` to `community-plugins.json`. Reload Obsidian. Turn **Restricted mode** off (Settings → Community plugins) or the plugin will not load.
 
 ## Scripts
 

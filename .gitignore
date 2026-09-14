@@ -9,3 +9,10 @@ coverage
 dist
 .idea
 .vscode
+example/vault/.git
+example/worktrees
+example/vault/.obsidian/workspace.json
+example/vault/.obsidian/workspace-mobile.json
+example/vault/.obsidian/plugins/forest/main.js
+example/vault/.obsidian/plugins/forest/manifest.json
+example/vault/.obsidian/plugins/forest/styles.css

@@ -3,7 +3,7 @@
 	"name": "Forest",
 	"version": "0.1.0",
 	"minAppVersion": "1.10.0",
-	"description": "Preview, diff, and open git worktree copies of the active note.",
+	"description": "🌳 Preview, diff, and open git worktree copies of the active note.",
 	"author": "tyler.earth",
 	"authorUrl": "https://tyler.earth/",
 	"isDesktopOnly": true,

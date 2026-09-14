@@ -28,7 +28,7 @@ Commands list copies for the open file, then preview, diff against the vault fil
 
 ## Install into a vault
 
-Plugin id is `forest`. After `pnpm build` or `pnpm dev`, symlink (preferred) or copy only `main.js`, `manifest.json`, and `styles.css` into `Vault/.obsidian/plugins/forest/`. Do not symlink the whole repo. Add `"forest"` to `community-plugins.json` without dropping other ids.
+Plugin id is `forest`. After `pnpm build` or `pnpm dev`, symlink (preferred) or copy only `main.js`, `manifest.json`, and `styles.css` into `Vault/.obsidian/plugins/forest/`. Do not symlink the whole repo. Add `"forest"` to `community-plugins.json` without dropping other ids. Screenshot vault is `example/vault`. Worktrees go in `example/worktrees/` via `example/setup-worktrees.sh`. See `example/README.md`.
 
 ## Tooling
 
